@@ -39,4 +39,4 @@ jobs:
     uses: contributte/.github/.github/workflows/nette-tester.yml@v1
     with:
       php: "7.4"
-      composer: "composer update --no-interaction --no-progress --prefer-dist --prefer-stable --prefer-lowest"
+      composer: "composer update --no-interaction --no-progress --prefer-assets --prefer-stable --prefer-lowest"

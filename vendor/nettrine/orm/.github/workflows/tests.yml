@@ -33,11 +33,11 @@ jobs:
     uses: contributte/.github/.github/workflows/nette-tester.yml@v1
     with:
         php: "7.3"
-        composer: "composer update --no-interaction --no-progress --prefer-dist --prefer-stable --prefer-lowest"
+        composer: "composer update --no-interaction --no-progress --prefer-assets --prefer-stable --prefer-lowest"
 
   test72:
     name: "Nette Tester"
     uses: contributte/.github/.github/workflows/nette-tester.yml@v1
     with:
         php: "7.2"
-        composer: "composer update --no-interaction --no-progress --prefer-dist --prefer-stable --prefer-lowest"
+        composer: "composer update --no-interaction --no-progress --prefer-assets --prefer-stable --prefer-lowest"
