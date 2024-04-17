@@ -14,4 +14,12 @@ final class AuthPresenter extends Nette\Application\UI\Presenter
     {
         $this->database = $this->database;
     }
+
+    public function renderLogin(){
+
+    }
+
+    public function renderRegister(){
+
+    }
 }
