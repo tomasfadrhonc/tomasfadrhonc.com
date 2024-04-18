@@ -13,7 +13,7 @@ use Tracy\ILogger;
 /**
  * Handles uncaught exceptions and errors, and logs them.
  */
-final class Error5xxPresenter implements Nette\Application\IPresenter
+final class Error5xxPresenter implements \Nette\Application\IPresenter
 {
 	// allow access via all HTTP methods
 	public array $allowedMethods = [];

@@ -9,9 +9,9 @@ application:
 
 
 database:
-	dsn: 'mysql:host=mysql-db;dbname=features;port=3306'
-	user: user
-	password: password
+	dsn: 'mysql:host=mysql-db;dbname=tomasfadrhonc.com;port=3306'
+	user: root
+	password: root
 
 
 latte:

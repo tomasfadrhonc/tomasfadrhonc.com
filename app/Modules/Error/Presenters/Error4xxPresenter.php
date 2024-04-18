@@ -10,7 +10,7 @@ use Nette;
 /**
  * Handles 4xx HTTP error responses.
  */
-final class Error4xxPresenter extends Nette\Application\UI\Presenter
+final class Error4xxPresenter extends \Nette\Application\UI\Presenter
 {
 	// allow access via all HTTP methods
 	public array $allowedMethods = [];
