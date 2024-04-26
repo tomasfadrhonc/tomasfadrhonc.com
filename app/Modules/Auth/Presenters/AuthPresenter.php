@@ -48,4 +48,28 @@ final class AuthPresenter extends Nette\Application\UI\Presenter
     public function renderRegister(){
 
     }
+
+    public function createComponentRegisterForm(): Form
+    {
+        $form = new Form();
+        $form->addText("name", "Name");
+        $form->addText("surname", "Surname");
+        $form->addEmail("email", "Email");
+        $form->addPassword("password", "Password");
+        $form->addSubmit("register", "Register");
+        $form->onSuccess[] = [$this, 'formRegisterSucceeded'];
+
+        return $form;
+    }
+
+    public function formRegisterSucceeded(Form $form, $data): void
+    {
+        try {
+            //$this->user->login($data->email, $data->password);
+            $this->flashMessage('Registered!', 'success');
+            $this->redirect(':Front:Home:default');
+        } catch(Nette\Security\AuthenticationException $e) {
+            $this->flashMessage($e->getMessage(), 'danger');
+        }
+    }
 }
